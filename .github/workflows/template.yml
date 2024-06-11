@@ -92,9 +92,8 @@ jobs:
             Library-build-
             Library-
 
-      - uses: game-ci/unity-builder@v4
+      - uses: webbertakken/unity-builder@v2
         with:
-          buildMethod: EditorNamespace.BuilderClassName.StaticBuildMethod
           targetPlatform: WebGL
 
       - uses: actions/upload-artifact@v1
